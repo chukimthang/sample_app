@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   get "/signup", to: "users#new"
   root "static_pages#home"
-  resources :users, only: [:show, :new, :create]
+  resources :users
 end
