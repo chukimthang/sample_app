@@ -13,5 +13,7 @@
   password = "password"
   password_confirmation = "password"
 
-  User.create name: name, email:email, password: password, password_confirmation: password_confirmation
+  User.create name: name, email:email, password: password,
+    password_confirmation: password_confirmation,
+    activated: true, activated_at: Time.zone.now
 end
